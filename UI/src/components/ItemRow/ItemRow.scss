@@ -1,0 +1,42 @@
+@import '../../theme/globalStyles.scss';
+
+$delete-button-size: 1.5rem;
+.item-row-container {
+  display: flex;
+  border-bottom: $border;
+  position: relative;
+
+  .item-list-value {
+    flex: 1;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+    font-weight: bold;
+    color: var(--font-color);
+    border-right: $border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .delete-icon-container {
+    position: absolute;
+    height: $delete-button-size;
+    width: $delete-button-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: var(--font-color);
+    background-color: var(--danger);
+    border-radius: 50%;
+  }
+}

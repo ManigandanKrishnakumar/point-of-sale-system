@@ -1,0 +1,16 @@
+@import './theme/globalStyles.scss';
+@import './theme/theme.scss';
+
+.app-container {
+  flex: 1;
+  display: flex;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  min-height: 800px;
+}
+
+#ifmcontentstoprint {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+}

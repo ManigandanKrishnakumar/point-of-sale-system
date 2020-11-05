@@ -1,0 +1,10 @@
+@import '../../theme/globalStyles.scss';
+
+.tax-container {
+  flex: 1;
+  max-width: 400px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,32 @@
+@import '../../../theme/globalStyles.scss';
+
+.button {
+  background-color: var(--highlight-color);
+  color: #000;
+  border-radius: $border-radius;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+  &.button-large {
+    height: 4rem;
+    width: 5rem;
+    font-size: 1.25rem;
+  }
+
+  &.button-xlarge {
+    height: 4rem;
+    width: 8rem;
+    font-size: 1.5rem;
+  }
+
+  &:disabled {
+    background-color: rgba(104, 213, 243, 0.3);
+  }
+
+  &:focus {
+    border: 5px solid var(--logo-color);
+  }
+}

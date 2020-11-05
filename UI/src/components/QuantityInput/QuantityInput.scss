@@ -1,0 +1,63 @@
+@import '../../theme/globalStyles.scss';
+
+.quantity-input-container {
+  display: flex;
+  background-color: var(--logo-color-light);
+  border-radius: $border-radius;
+
+  .qty-input {
+    height: 4rem;
+    font-size: 1.5rem;
+    width: 3rem;
+    padding-left: 10px;
+    &::placeholder {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+
+      font-weight: 300;
+    }
+
+    &:focus {
+      background-color: var(--logo-color);
+    }
+  }
+
+  .quantity-label {
+    height: 4rem;
+    margin: 0 0 0 10px;
+    color: grey;
+    font-weight: 600;
+    padding-right: 10px;
+    border-right: $border-black;
+    display: flex;
+    align-items: center;
+  }
+
+  .spinner-buttons-container {
+    border: $border-black;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    .spinner-icon-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      &:first-child {
+        border-bottom: $border-black;
+      }
+    }
+    .spinner-icon {
+      color: #000;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media print {
+  .quantity-input-container {
+    display: none;
+  }
+}

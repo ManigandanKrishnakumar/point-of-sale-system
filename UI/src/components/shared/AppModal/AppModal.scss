@@ -1,0 +1,54 @@
+@import '../../../theme/globalStyles.scss';
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin: 0;
+  }
+  .modal-header {
+    border-bottom: $border;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+    .header-end {
+      display: flex;
+      align-items: center;
+
+      .header-end-slot {
+        margin-right: 30px;
+      }
+      .close-button-wrapper {
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        background-color: var(--danger);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .close-button {
+          font-size: 1.3rem;
+          color: var(--font-color);
+        }
+      }
+    }
+  }
+
+  .modal-content {
+    padding: 20px;
+    flex: 10;
+    overflow: auto;
+  }
+
+  .modal-footer {
+    flex: 1;
+    border-top: $border;
+    padding: 20px;
+  }
+}

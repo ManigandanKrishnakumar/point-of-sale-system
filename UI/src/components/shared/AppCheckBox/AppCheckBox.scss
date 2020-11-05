@@ -1,0 +1,21 @@
+@import '../../../theme/globalStyles.scss';
+
+.payment-type-container {
+  border-bottom: $border;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  border-radius: $border-radius-10;
+
+  &:hover {
+    background-color: var(--logo-color);
+    color: #000;
+  }
+
+  h3 {
+    margin: 0;
+  }
+  &.selected {
+    color: #000;
+    background-color: var(--highlight-color);
+  }
+}

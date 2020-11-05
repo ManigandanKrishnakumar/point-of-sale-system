@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+}
+
+h2 {
+  color: var(--highlight-color);
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  background-color: var(--logo-color-light);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.margin-top-1em {
+  margin-top: 1rem;
+}
+
+.error-message {
+  color: var(--danger);
+  font-weight: bold;
+  margin: 10px;
+}
+
+.ReactModal__Overlay--after-open {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* --------------------- START: ANIMATIONS -------------------- */
+
+.fade-in {
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --------------------- START: INPUT STYLES ----------------- */
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(https://i.ibb.co/02Wmhq9/icons8-calendar-48-1.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}

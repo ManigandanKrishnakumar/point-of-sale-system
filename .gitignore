@@ -1,0 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+UI/node_modules/
+Server/node_modules/
+Server/dump/
+Server/logs/
+/config/
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+Server/src/config/app-config.ts
+
+*.log
+Server/dump/dbDumpFile2020-10-21.sql
+
+Server/dist
+Server/src/public
+UI/build/
+
+
+UI/build/precache-manifest.3a60cc65a664c93796e34ecf9b108f5c.js
+*.lock
+

@@ -1,0 +1,16 @@
+.app-table-container {
+  flex: 1;
+  .data-table {
+    // width: 800px;
+    height: 100%;
+    .ag-header-cell-label {
+      display: flex;
+      justify-content: center;
+    }
+    .ag-header-cell-text {
+      color: var(--highlight-color);
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}

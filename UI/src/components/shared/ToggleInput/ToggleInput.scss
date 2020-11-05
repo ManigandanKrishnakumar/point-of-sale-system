@@ -1,0 +1,46 @@
+@import '../../../theme/globalStyles.scss';
+
+.toggle-input-container {
+  display: flex;
+  align-items: center;
+
+  .label {
+    color: var(--highlight-color);
+    font-size: 1.25rem;
+    font-weight: 'bold';
+    margin-right: 10px;
+  }
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: $border;
+  border-radius: $border-radius-10;
+  .toggle-input {
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--bg-color);
+    border: none;
+    border-top-left-radius: $border-radius-10;
+    border-bottom-left-radius: $border-radius-10;
+    color: var(--font-color);
+    font-size: 1.25rem;
+    padding: 10px;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  .input-icon {
+    font-size: 2rem;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .tick {
+    color: var(--highlight-color);
+  }
+}

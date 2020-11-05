@@ -1,0 +1,18 @@
+@import '../../theme/globalStyles.scss';
+
+.billing-actions-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  .action-buttons-wrappers {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media print {
+  .billing-actions-container {
+    display: none;
+  }
+}

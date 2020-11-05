@@ -1,0 +1,74 @@
+.bill-to-print-container {
+  display: none;
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  h1 {
+    font-size: 50px;
+    margin: 10px 0;
+  }
+  .c {
+    font-size: 10px;
+  }
+  .non-table {
+    p {
+      margin: 5px 0;
+    }
+  }
+  .bill-customer-info {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .customer-info {
+      text-align: right;
+    }
+  }
+  .total {
+    text-align: right;
+  }
+  .store-details {
+    text-align: center;
+  }
+  .items-table {
+    font-size: 14px;
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+      border: 1px solid black;
+    }
+    td {
+      max-width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    td:first-child {
+      text-align: left;
+      width: 10%;
+    }
+
+    th {
+      padding: 5px;
+    }
+  }
+
+  h2 {
+    color: black;
+  }
+
+  .sl-no {
+    text-align: left;
+  }
+}
+
+@media print {
+  .bill-to-print-container {
+    display: block;
+    height: auto;
+    width: 100%;
+    min-width: 300px;
+  }
+}

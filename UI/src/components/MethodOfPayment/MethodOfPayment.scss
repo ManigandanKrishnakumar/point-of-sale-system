@@ -1,0 +1,19 @@
+@import '../../theme/globalStyles.scss';
+.mod-container {
+  padding: 2rem;
+  border-bottom: $border;
+  flex: 1;
+
+  .title {
+    margin: 0;
+  }
+  .list-container {
+    margin-top: 2rem;
+  }
+}
+
+@media print {
+  .mod-container {
+    display: none;
+  }
+}

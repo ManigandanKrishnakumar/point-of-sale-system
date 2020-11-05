@@ -1,0 +1,40 @@
+@import '../../theme/globalStyles.scss';
+.page-header-container {
+  padding: 5px 15px 0;
+  display: flex;
+  border-bottom: $border;
+  justify-content: space-between;
+
+  .heading {
+    color: var(--highlight-color);
+    flex: 1;
+  }
+  .slots-container {
+    display: flex;
+    justify-content: flex-end;
+    // flex: 1;
+    width: 70%;
+    .slot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: $border;
+
+      &.middle {
+        width: 25%;
+        border-left: none;
+      }
+
+      &.end {
+        // flex: 1;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media print {
+  .page-header-container {
+    display: none;
+  }
+}

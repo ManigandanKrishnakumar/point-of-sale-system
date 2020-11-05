@@ -1,0 +1,51 @@
+@import '../../../theme/globalStyles.scss';
+.bill-container {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+
+  .billing-section {
+    flex: 1;
+    display: flex;
+
+    .billing-info-container {
+      width: 64.8%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      border-right: $border;
+      .inputs-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .search-bar-wrapper {
+          position: relative;
+          min-width: 55%;
+          max-width: 70%;
+        }
+      }
+    }
+    .customer-info-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media print {
+  .bill-container {
+    .search-bar-wrapper {
+      display: none;
+    }
+
+    button {
+      display: none;
+    }
+
+    .customer-info-container {
+      display: none;
+    }
+  }
+}

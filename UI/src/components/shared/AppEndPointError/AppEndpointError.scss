@@ -1,0 +1,22 @@
+.app-endpoint-error-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .endpoint-error-content {
+    display: flex;
+
+    .text {
+      font-size: x-large;
+    }
+
+    .try-again {
+      color: var(--highlight-color);
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: x-large;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+}

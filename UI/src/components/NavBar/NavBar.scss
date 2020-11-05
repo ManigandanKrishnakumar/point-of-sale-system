@@ -1,0 +1,40 @@
+@import '../../theme/globalStyles.scss';
+.nav-bar-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 100px;
+  border-right: $border;
+
+  .logo-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 3rem;
+    color: var(--logo-color);
+  }
+
+  .nav-buttons-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 100%;
+    font-size: 3rem;
+    color: var(--highlight-color);
+    margin: 1rem 0;
+  }
+}
+
+@media print {
+  .nav-bar-container {
+    display: none;
+  }
+}

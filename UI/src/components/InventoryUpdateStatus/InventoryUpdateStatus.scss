@@ -1,0 +1,8 @@
+@import '../../theme/globalStyles.scss';
+.inventory-update-status-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: $border;
+}

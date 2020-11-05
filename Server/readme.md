@@ -1,0 +1,33 @@
+1. Inventory
+   url : http://localhost:80/inventory/add-items
+   example body:
+   {"items":[{"id":"fl1","name":"flower1","qty":120,"unitPrice":10.2},{"id":"fl2","name":"flower2","qty":320,"unitPrice":330.2},{"id":"fl3","name":"flower3","qty":20,"unitPrice":1.2},{"id":"fo1","name":"foo1","qty":100,"unitPrice":26},{"id":"f021","name":"food2","qty":60,"unitPrice":55}]}
+
+url : http://localhost:80/inventory/get-items
+example body:
+{"searchData":"arvi"}
+
+url : http://localhost:80/inventory/search-item
+example body:
+{"searchData":[{"searchColumn":"ITEM_ID","searchString":"16"}],"sortData":{"sortColumn":"LAST_UPDATED_DATE","sortOrder":"DESC"},"pageData":{"startRange":0,"pageLength":2}}
+
+url : http://localhost:80/inventory/delete-items
+example body:
+{"items":[2,4,6]}
+
+url : http://localhost:80/inventory/update-item
+example body:
+{"item_id":"f02","item_name":"food2","quantity":120,"price":60}
+
+2.Billing
+url : http://localhost:80/billing/add-bill
+example body:
+{"customerInfo":{"name":"arvinth", "phone":"943819252"}, "tax":{"cgst":1, "sgst":1}, "total":459, "paymentMethod":"cash", "items":[{"id":"1", "name":"product 1", "qty":100, "unitPrice":100}, {"id":"2", "item_name":"product 2", "qty":10, "unitPrice":150}, {"id":"3", "item_name":"product 3", "qty":30, "unitPrice":200}]}
+
+url : http://localhost:80/inventory/get-bills
+example body:
+{"searchData":"arvi"}
+
+url : http://localhost:80/billing/search-bill
+example body:
+{"searchData":[{"searchColumn":"CUSTOMER_ID","searchString":"16"}],"sortData":{"sortColumn":"CREATION_DATE","sortOrder":"DESC"},"startRange":0,"pageLength":2}
